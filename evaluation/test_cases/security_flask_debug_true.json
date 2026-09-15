@@ -1,0 +1,6 @@
+{
+  "id": "security_flask_debug_true",
+  "description": "Flask app run with debug=True exposes the interactive debugger (semgrep-detected).",
+  "diff": "diff --git a/app.py b/app.py\n--- a/app.py\n+++ b/app.py\n@@ -1,1 +1,3 @@\n+from flask import Flask\n+app = Flask(__name__)\n+app.run(debug=True)\n",
+  "repo_files": {}
+}

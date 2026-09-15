@@ -1,0 +1,7 @@
+{
+  "id": "security_command_injection",
+  "expect_no_findings": false,
+  "expected_categories": [
+    "security"
+  ]
+}

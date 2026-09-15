@@ -1,0 +1,6 @@
+{
+  "id": "clean_trivial_wrapper_no_test_needed",
+  "description": "A trivial one-line getter shouldn't be flagged as needing a test.",
+  "diff": "diff --git a/src/pricing.py b/src/pricing.py\n--- a/src/pricing.py\n+++ b/src/pricing.py\n@@ -1,1 +1,3 @@\n+def get_base_price(item):\n+    return item.price\n",
+  "repo_files": {}
+}

@@ -1,0 +1,6 @@
+{
+  "id": "clean_correct_indexing",
+  "description": "Correct use of len(items) - 1 for the last index.",
+  "diff": "diff --git a/src/list_utils.py b/src/list_utils.py\n--- a/src/list_utils.py\n+++ b/src/list_utils.py\n@@ -1,1 +1,3 @@\n+def last_item(items):\n+    return items[len(items) - 1]\n",
+  "repo_files": {}
+}

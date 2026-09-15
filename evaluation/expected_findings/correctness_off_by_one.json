@@ -1,0 +1,7 @@
+{
+  "id": "correctness_off_by_one",
+  "expect_no_findings": false,
+  "expected_categories": [
+    "correctness"
+  ]
+}

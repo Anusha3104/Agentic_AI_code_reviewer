@@ -1,0 +1,29 @@
+diff --git a/src/user_service.py b/src/user_service.py
+index 111aaaa..222bbbb 100644
+--- a/src/user_service.py
++++ b/src/user_service.py
+@@ -1,4 +1,13 @@
+ """User service module."""
+ 
+ 
++API_TOKEN = "demo_secret_notreal_abcdefg123456789xyz"
++
++
+ def get_user(user_id):
+     """Fetch a user record by id."""
+-    query = "SELECT * FROM users WHERE id=" + user_id
+-    return db.execute(query)
++    query = "SELECT * FROM users WHERE id=" + user_id
++    try:
++        return db.execute(query)
++    except:
++        pass
+diff --git a/src/list_utils.py b/src/list_utils.py
+new file mode 100644
+index 0000000..3333333
+--- /dev/null
++++ b/src/list_utils.py
+@@ -0,0 +1,3 @@
++def last_item(items):
++    """Return the last item in a list."""
++    return items[len(items)]

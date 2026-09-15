@@ -1,0 +1,7 @@
+{
+  "id": "testing_missing_test_for_new_logic",
+  "expect_no_findings": false,
+  "expected_categories": [
+    "testing"
+  ]
+}

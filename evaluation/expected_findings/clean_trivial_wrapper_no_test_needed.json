@@ -1,0 +1,5 @@
+{
+  "id": "clean_trivial_wrapper_no_test_needed",
+  "expect_no_findings": true,
+  "expected_categories": []
+}

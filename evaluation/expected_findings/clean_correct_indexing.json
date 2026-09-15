@@ -1,0 +1,5 @@
+{
+  "id": "clean_correct_indexing",
+  "expect_no_findings": true,
+  "expected_categories": []
+}

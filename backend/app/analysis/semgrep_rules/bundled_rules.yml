@@ -1,0 +1,62 @@
+rules:
+  - id: eval-usage
+    languages: [python]
+    severity: ERROR
+    message: >-
+      Use of eval() on data that may not be fully trusted can lead to
+      arbitrary code execution.
+    metadata:
+      category: security
+      confidence: HIGH
+    patterns:
+      - pattern: eval(...)
+
+  - id: exec-usage
+    languages: [python]
+    severity: ERROR
+    message: >-
+      Use of exec() on data that may not be fully trusted can lead to
+      arbitrary code execution.
+    metadata:
+      category: security
+      confidence: HIGH
+    patterns:
+      - pattern: exec(...)
+
+  - id: subprocess-shell-true
+    languages: [python]
+    severity: WARNING
+    message: >-
+      subprocess call with shell=True can allow command injection if any
+      part of the command is influenced by external input.
+    metadata:
+      category: security
+      confidence: MEDIUM
+    patterns:
+      - pattern: subprocess.$FUNC(..., shell=True, ...)
+
+  - id: flask-debug-true
+    languages: [python]
+    severity: WARNING
+    message: >-
+      Running a Flask app with debug=True in production exposes the
+      Werkzeug interactive debugger, which allows remote code execution.
+    metadata:
+      category: security
+      confidence: HIGH
+    patterns:
+      - pattern: $APP.run(..., debug=True, ...)
+
+  - id: assert-used-for-validation
+    languages: [python]
+    severity: WARNING
+    message: >-
+      `assert` statements are stripped when Python is run with the -O
+      optimization flag, so they must not be used to enforce security or
+      business-logic invariants (e.g. authorization checks).
+    metadata:
+      category: correctness
+      confidence: MEDIUM
+    patterns:
+      - pattern: assert $COND, "..."
+      - pattern-not: assert $COND

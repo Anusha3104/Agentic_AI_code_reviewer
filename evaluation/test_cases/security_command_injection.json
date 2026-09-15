@@ -1,0 +1,6 @@
+{
+  "id": "security_command_injection",
+  "description": "os.system called with a concatenated, user-influenced string.",
+  "diff": "diff --git a/src/tools.py b/src/tools.py\n--- a/src/tools.py\n+++ b/src/tools.py\n@@ -1,1 +1,3 @@\n+def ping(host):\n+    import os\n+    os.system(\"ping -c 1 \" + host)\n",
+  "repo_files": {}
+}

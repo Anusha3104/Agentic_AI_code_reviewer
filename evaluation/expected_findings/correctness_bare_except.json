@@ -1,0 +1,7 @@
+{
+  "id": "correctness_bare_except",
+  "expect_no_findings": false,
+  "expected_categories": [
+    "correctness"
+  ]
+}

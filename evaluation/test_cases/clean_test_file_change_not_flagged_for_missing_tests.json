@@ -1,0 +1,6 @@
+{
+  "id": "clean_test_file_change_not_flagged_for_missing_tests",
+  "description": "Changing a test file itself should never trigger a missing-test finding.",
+  "diff": "diff --git a/tests/test_pricing.py b/tests/test_pricing.py\n--- a/tests/test_pricing.py\n+++ b/tests/test_pricing.py\n@@ -1,1 +1,4 @@\n+def test_calculate_discount():\n+    if True:\n+        assert calculate_discount(100, \"SAVE10\") == 90\n",
+  "repo_files": {}
+}

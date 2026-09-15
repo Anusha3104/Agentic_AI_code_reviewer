@@ -1,0 +1,5 @@
+{
+  "id": "clean_safe_yaml_load",
+  "expect_no_findings": true,
+  "expected_categories": []
+}

@@ -1,0 +1,6 @@
+{
+  "id": "clean_safe_yaml_load",
+  "description": "yaml.safe_load() is the secure variant and should not be flagged.",
+  "diff": "diff --git a/src/config_loader.py b/src/config_loader.py\n--- a/src/config_loader.py\n+++ b/src/config_loader.py\n@@ -1,1 +1,3 @@\n+import yaml\n+def load_config(raw):\n+    return yaml.safe_load(raw)\n",
+  "repo_files": {}
+}

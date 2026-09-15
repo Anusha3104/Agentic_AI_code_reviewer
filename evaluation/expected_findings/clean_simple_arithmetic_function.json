@@ -1,0 +1,5 @@
+{
+  "id": "clean_simple_arithmetic_function",
+  "expect_no_findings": true,
+  "expected_categories": []
+}

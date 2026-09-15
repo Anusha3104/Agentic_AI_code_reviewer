@@ -1,0 +1,6 @@
+{
+  "id": "testing_missing_test_for_new_logic",
+  "description": "New function with real branching logic and no accompanying test.",
+  "diff": "diff --git a/src/pricing.py b/src/pricing.py\n--- a/src/pricing.py\n+++ b/src/pricing.py\n@@ -1,1 +1,8 @@\n+def calculate_discount(price, coupon):\n+    if coupon == \"SAVE10\":\n+        return price * 0.9\n+    elif coupon == \"SAVE20\":\n+        return price * 0.8\n+    else:\n+        return price\n",
+  "repo_files": {}
+}

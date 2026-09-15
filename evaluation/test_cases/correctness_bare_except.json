@@ -1,0 +1,6 @@
+{
+  "id": "correctness_bare_except",
+  "description": "Bare except: swallows all exceptions including KeyboardInterrupt.",
+  "diff": "diff --git a/src/worker.py b/src/worker.py\n--- a/src/worker.py\n+++ b/src/worker.py\n@@ -1,1 +1,5 @@\n+def process(job):\n+    try:\n+        job.run()\n+    except:\n+        pass\n",
+  "repo_files": {}
+}

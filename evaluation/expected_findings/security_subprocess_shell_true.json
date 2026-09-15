@@ -1,0 +1,7 @@
+{
+  "id": "security_subprocess_shell_true",
+  "expect_no_findings": false,
+  "expected_categories": [
+    "security"
+  ]
+}

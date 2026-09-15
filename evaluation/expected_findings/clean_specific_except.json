@@ -1,0 +1,5 @@
+{
+  "id": "clean_specific_except",
+  "expect_no_findings": true,
+  "expected_categories": []
+}

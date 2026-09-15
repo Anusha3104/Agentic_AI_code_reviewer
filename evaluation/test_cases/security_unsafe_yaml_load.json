@@ -1,0 +1,6 @@
+{
+  "id": "security_unsafe_yaml_load",
+  "description": "yaml.load() without a safe loader can construct arbitrary objects.",
+  "diff": "diff --git a/src/config_loader.py b/src/config_loader.py\n--- a/src/config_loader.py\n+++ b/src/config_loader.py\n@@ -1,1 +1,3 @@\n+import yaml\n+def load_config(raw):\n+    return yaml.load(raw)\n",
+  "repo_files": {}
+}

@@ -1,0 +1,6 @@
+{
+  "id": "security_pickle_deserialization",
+  "description": "pickle.loads() on data that may come from an untrusted source.",
+  "diff": "diff --git a/src/cache.py b/src/cache.py\n--- a/src/cache.py\n+++ b/src/cache.py\n@@ -1,1 +1,3 @@\n+import pickle\n+def load_cached(data):\n+    return pickle.loads(data)\n",
+  "repo_files": {}
+}

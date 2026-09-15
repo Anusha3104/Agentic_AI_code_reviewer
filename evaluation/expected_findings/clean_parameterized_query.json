@@ -1,0 +1,5 @@
+{
+  "id": "clean_parameterized_query",
+  "expect_no_findings": true,
+  "expected_categories": []
+}

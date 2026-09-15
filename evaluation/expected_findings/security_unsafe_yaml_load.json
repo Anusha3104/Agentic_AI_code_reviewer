@@ -1,0 +1,7 @@
+{
+  "id": "security_unsafe_yaml_load",
+  "expect_no_findings": false,
+  "expected_categories": [
+    "security"
+  ]
+}

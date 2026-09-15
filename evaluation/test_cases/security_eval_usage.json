@@ -1,0 +1,6 @@
+{
+  "id": "security_eval_usage",
+  "description": "eval() called on a function argument (semgrep-detected).",
+  "diff": "diff --git a/src/calculator.py b/src/calculator.py\n--- a/src/calculator.py\n+++ b/src/calculator.py\n@@ -1,1 +1,2 @@\n+def compute(expr):\n+    return eval(expr)\n",
+  "repo_files": {}
+}

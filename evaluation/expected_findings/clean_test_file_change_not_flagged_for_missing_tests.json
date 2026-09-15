@@ -1,0 +1,5 @@
+{
+  "id": "clean_test_file_change_not_flagged_for_missing_tests",
+  "expect_no_findings": true,
+  "expected_categories": []
+}
